@@ -115,6 +115,7 @@ nav ul a{
     border-bottom: 1px solid rgba(0,0,0,0.1);
 }
 
+
 /* Main style  */
 
 /* Populer callection section style*/
@@ -188,6 +189,56 @@ nav ul a{
     margin-left: 10px;
 }
 
+/* Featured section style  */
+.featured{
+    width: 80%;
+    margin: 0 auto 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--poppins);
+}
+
+.featured__content{
+    margin-left: 50px;
+}
+
+.featured__content h1{
+    color: #0A0826;
+    font-size: 2.1rem;
+    font-weight: var(--seven);
+}
+
+.featured__content p{
+    color: var(--secendery_colo);
+    font-weight: 700;
+    margin: 20px 0 10px;
+}
+
+.featured__content .btn{
+    border-radius: 0;
+}
+
+
+/* Footer style  */
+footer{
+    width: 100%;
+    background: #0A0826;
+    padding: 50px 0;
+    text-align: center;
+    color: #fff;
+    font-family: var(--poppins);
+}
+
+footer h1{
+    font-size: 1.5rem;
+    font-weight: var(--seven);
+}
+
+footer p{
+    font-size: 14px;
+    font-weight: var(--seven);
+}
 
 
 
@@ -198,8 +249,11 @@ nav ul a{
     .baner__img img{
         width: 100%;
     }
-    nav, .baner__content{
+    nav{
         flex-direction: column;
+    }
+    .baner__content{
+        flex-direction: column-reverse;
     }
 
     nav{
@@ -254,6 +308,25 @@ nav ul a{
     .popular__card img{
         width: 100%;
     }
+    .featured{
+        flex-direction: column-reverse;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .featured .featured__img{
+        width: 100%;
+    }
+
+    .featured__img img{
+        width: 100%;
+    }
+
+    .featured__content{
+        margin-left: 0;
+        margin-bottom: 20px;
+        text-align: center;
+    }
 }
 
 /* tablet devis */
@@ -262,7 +335,8 @@ nav ul a{
     .baner__img img{
         width: 100%;
     }
-    nav, .baner__content{
+    nav, .baner__content,
+    .featured{
         flex-direction: column;
     }
 
