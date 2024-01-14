@@ -120,7 +120,7 @@ nav ul a{
 /* Populer callection section style*/
 
 .popular__collection{
-    width: 70%;
+    width: 80%;
     margin: 0 auto 10%;
 }
 
@@ -144,6 +144,10 @@ nav ul a{
     padding: 10px;
     border-radius: 5px;
     box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+}
+
+.popular__card img{
+    width: 100%;
 }
 
 .popular__card h1{
