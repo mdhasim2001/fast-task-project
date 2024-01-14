@@ -388,4 +388,24 @@ footer p{
     .popular__card img{
         width: 100%;
     }
+
+    .featured{
+        flex-direction: column-reverse;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .featured .featured__img{
+        width: 100%;
+    }
+
+    .featured__img img{
+        width: 100%;
+    }
+
+    .featured__content{
+        margin-left: 0;
+        margin-bottom: 20px;
+        text-align: center;
+    }
 }
