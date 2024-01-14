@@ -42,7 +42,7 @@
 header{
     font-family: var(--poppins);
     width: 80%;
-    margin: 0 auto 5%;
+    margin: 0 auto 10%;
 }
 
 header nav{
@@ -119,6 +119,72 @@ nav ul a{
 
 /* Populer callection section style*/
 
+.popular__collection{
+    width: 70%;
+    margin: 0 auto 10%;
+}
+
+.popular__collection > h1{
+    color: var(--praimary_colo);
+    font-weight: var(--six);
+    font-size: 1.5rem;
+    font-family: var(--poppins);
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.popular__card{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 5%;
+}
+
+.popular__card .card{
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+}
+
+.popular__card h1{
+    font-size: 1.7rem;
+    font-weight: var(--five);
+    color: rgba(0, 0, 0, 0.87);
+    margin: 10px 0;
+    font-family: var(--poppins);
+}
+
+.popular__card h3{
+    font-family: var(--inter);
+    font-size: 1.5rem;
+    font-weight: var(--fore);
+    color: rgba(0, 0, 0, 0.87);
+
+}
+
+.popular__card p{
+    font-size: 14px;
+    font-weight: var(--seven);
+    color: var(--secendery_colo);
+    font-family: var(--inter);
+    margin-top: 10px;
+}
+
+.popular__collection .button{
+    text-align: right;
+}
+
+.popular__collection button{
+    background: none;
+    border: 0;
+    color: rgba(224, 44, 109, 0.87);
+}
+
+.popular__collection i{
+    margin-left: 10px;
+}
+
+
 
 
 /* responsiv style  */
@@ -171,6 +237,19 @@ nav ul a{
         border-bottom: 0;
         text-align: center;
     }
+
+    .popular__collection{
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .popular__card{
+        grid-template-columns: 1fr;
+    }
+
+    .popular__card img{
+        width: 100%;
+    }
 }
 
 /* tablet devis */
@@ -217,5 +296,18 @@ nav ul a{
         border-top: 0;
         border-bottom: 0;
         text-align: center;
+    }
+
+    .popular__collection{
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .popular__card{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .popular__card img{
+        width: 100%;
     }
 }
